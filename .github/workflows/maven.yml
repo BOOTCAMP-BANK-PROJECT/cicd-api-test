@@ -7,9 +7,9 @@ name: Java CI/CD Example
 
 on:
   push:
-    branches: [ main ]
+    branches: [ default ]
   pull_request:
-    branches: [ main ]
+    branches: [ default ]
 
 jobs:
   build:
@@ -40,3 +40,4 @@ jobs:
         context: .
         push: true
         tags: samuel14luis/ci-cd-api-test:0.0.3-SNAPSHOT
+
